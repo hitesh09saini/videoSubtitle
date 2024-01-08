@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 
-import Video from "@/utils/schema";
-import DBConnection from "@/utils/dbConnection";
+// import Video from "@/utils/schema";
+// import DBConnection from "@/utils/dbConnection";
 
-export async function GET() {
+export async function GET(req, res) {
     try {
         // await DBConnection();
         // const data = await Video.findById(params.videoId);

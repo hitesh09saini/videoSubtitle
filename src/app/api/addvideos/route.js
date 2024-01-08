@@ -4,13 +4,7 @@ import Video from '@/utils/schema';
 import DBConnection from '@/utils/dbConnection';
 import { cloudinaryURl } from '@/utils/cloudinary';
 
-export const config = {
-    api: {
-        bodyParser: false, 
-    },
-};
-
-export default async function handler(req, res) {
+export  async function POST(req, res) {
     try {
         await upload.single('video')(req, res); 
         await DBConnection();
